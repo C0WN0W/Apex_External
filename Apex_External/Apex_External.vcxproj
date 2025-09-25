@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Overlay\Overlay.hpp" />
     <ClInclude Include="Overlay\render.hpp" />
     <ClInclude Include="utils\defs.hpp" />
     <ClInclude Include="utils\offsets.hpp" />
