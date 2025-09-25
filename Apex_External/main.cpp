@@ -7,3 +7,8 @@
 #include "entity.hpp"
 #include "Interface.hpp"
 #include "Overlay/Overlay.hpp"
+
+int main()
+{
+	SetConsoleTitle(L" ");
+}
