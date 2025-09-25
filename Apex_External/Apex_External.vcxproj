@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="utils\defs.hpp" />
     <ClInclude Include="utils\offsets.hpp" />
     <ClInclude Include="utils\structs.hpp" />
   </ItemGroup>
