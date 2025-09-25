@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="entity.hpp" />
+    <ClInclude Include="Interface.hpp" />
     <ClInclude Include="Overlay\Overlay.hpp" />
     <ClInclude Include="Overlay\render.hpp" />
     <ClInclude Include="utils\defs.hpp" />
@@ -134,6 +136,7 @@
     <ClInclude Include="utils\structs.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Overlay\render.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
