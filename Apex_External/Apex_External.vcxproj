@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="comms.hpp" />
+    <ClInclude Include="driver\Driver.h" />
     <ClInclude Include="entity.hpp" />
     <ClInclude Include="Interface.hpp" />
     <ClInclude Include="Overlay\Overlay.hpp" />

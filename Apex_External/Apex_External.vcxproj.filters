@@ -36,6 +36,12 @@
     <ClInclude Include="Interface.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="driver\Driver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="comms.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Overlay\render.cpp">
