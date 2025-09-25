@@ -18,5 +18,8 @@
     <ClInclude Include="utils\structs.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="utils\offsets.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
