@@ -50,5 +50,32 @@ int main()
 		uint64_t viewRender = Read<uint64_t>(BaseAddress + OFF_VIEW_RENDER);
 		uint64_t viewMatrix = Read<uint64_t>(viewRender + OFF_VIEW_MATRIX);
 		Matrix m = Read<Matrix>(viewMatrix);
+
+		gRender->BeginDraw();
+
+		// loop 100 times for player, loop 20000 times for dummies
+		for (int i = 0; i < 100; i++) {
+			DWORD64 Entity = GetEntityById(i, BaseAddress);
+			//  std::cout << Entity << "\n";
+			if (Entity == 0)
+				continue;
+
+			Vector3 Position = Read<Vector3>(Entity + OFF_VecAbsOrigin);
+			Vector3 ScreenPosition = _WorldToScreen(Position, m, ScreenSize);
+			if (ScreenPosition.z <= 0.f)
+				continue;
+
+			// Color based on health
+			int MaxHealth = Read<int>(Entity + OFF_iMaxHealth);
+			float TargetHealth = Read<float>(Entity + OFF_iHealth) / (float)MaxHealth * 255.f;
+			float r = 255.f - TargetHealth;
+			float g = TargetHealth;
+			float b = 0.f;
+
+			// DrawLineESP({ 960,1080 }, { ScreenPosition.x, ScreenPosition.y }, { r,g,b });
+			// Put your drawing functions here
+		}
+
+		gRender->EndDraw();
 	}
 }
