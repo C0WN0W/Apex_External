@@ -42,4 +42,13 @@ int main()
 		system("pause");
 		exit(0);
 	}
+
+	while (true)
+	{
+		std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+		uint64_t viewRender = Read<uint64_t>(BaseAddress + OFF_VIEW_RENDER);
+		uint64_t viewMatrix = Read<uint64_t>(viewRender + OFF_VIEW_MATRIX);
+		Matrix m = Read<Matrix>(viewMatrix);
+	}
 }

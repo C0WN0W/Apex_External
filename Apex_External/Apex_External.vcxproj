@@ -138,6 +138,7 @@
     <ClInclude Include="utils\structs.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Interface.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Overlay\render.cpp" />
   </ItemGroup>
